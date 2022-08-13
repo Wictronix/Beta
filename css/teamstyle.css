@@ -9,8 +9,8 @@
 
 :root {
     --blueColor-1: #7462e1;
-    --blueColor-2: #4285F4;
-    --blueColor-3: #42caff;
+    --blueColor-2: #5863ff;
+    --blueColor-3: #5863ff;
     --orange: #f59425;
     --purple: #ce00ff;
     --greenColor: #28b922;
@@ -20,7 +20,7 @@
     --grey: #232424;
     --grey2: gray;
     --white: #fff;
-    --customColor: #42caff;
+    --customColor: #5863ff;
     --transition-1: all 250ms ease-in-out;
     --transition-2: all 350ms ease-in-out;
 }

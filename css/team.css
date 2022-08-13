@@ -12,8 +12,8 @@
 
 :root {
   --blueColor-1: #7462e1;
-  --blueColor-2: #4285F4;
-  --blueColor-3: #42caff;
+  --blueColor-2: #5863ff;
+  --blueColor-3: #5863ff;
   --orange: #f59425;
   --purple: #ce00ff;
   --greenColor: #28b922;
@@ -23,7 +23,7 @@
   --grey: #232424;
   --grey2: gray;
   --white: #fff;
-  --customColor: #42caff;
+  --customColor: #5863ff;
   --transition-1: all 250ms ease-in-out;
   --transition-2: all 350ms ease-in-out;
 }
@@ -256,7 +256,7 @@ body{
 .wrapper h1{
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
-  color: #42caff;
+  color: #5863ff;
   margin-bottom: 25px;
 }
 
@@ -270,7 +270,7 @@ body{
 .our_team .team_member{
   width: 320px;
   margin: 5px;
-  background: #42caff;
+  background: #5863ff;
   padding: 20px 10px;
 }
 
