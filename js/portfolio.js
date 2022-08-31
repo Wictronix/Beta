@@ -3,21 +3,32 @@
 const show_max = document.querySelector('.show-max');
 const nav = document.querySelector('.nav');
 const container = document.querySelector('.container-fixed');
-
+let sampleCard = document.querySelectorAll('.sample-box');
 let z = 0;
 
+console.log(sampleCard);
 show_max.onclick = ()=>{
   if(z == 0){
+      z = 1;
     nav.setAttribute('class', 'max-nav');
-    //container.style.width = "calc(100% - "+nav.clientWidth+"px)";
-    //container.style.left = nav.clientWidth+"px";
-    z = 1;
-  }
-  else{
-    nav.removeAttribute('class', 'max-nav');
-    //container.style.width = "calc(100% - "+nav.clientWidth+"px)";
-    //container.style.left = nav.clientWidth+"px";
+    container.style.width = "calc(100% - "+nav.clientWidth+"px)";
+    container.style.left = nav.clientWidth+"px";
+    for (let i = 0; i<13;i++) {
+        sampleCard[i].style.width = "30rem";
+        
+    }
+}
+else{
     z = 0;
+    nav.removeAttribute('class', 'max-nav');
+    container.style.width = "calc(100% - "+nav.clientWidth+"px)";
+    container.style.left = nav.clientWidth+"px";
+  
+    for (let i = 0; i<13;i++) {
+        sampleCard[i].style.width = "36rem";
+
+        
+    }
   }
 }
 
