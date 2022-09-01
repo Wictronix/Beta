@@ -52,7 +52,6 @@ show_all = ()=>{
 }
 
 ul.addEventListener('click', (event)=>{
-    console.log(event);
     if(event.target.className == "show-max" || event.target.localName == "span"){
         return 0;
     }

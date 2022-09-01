@@ -2,9 +2,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 16px;
     list-style: none;
     scroll-behavior: smooth;
+
 }
 a{
     color: #000;
@@ -20,6 +20,10 @@ i.bx-moon{
 
 i.bx-menu{
     font-size: 3rem;
+}
+
+.header {
+    margin-bottom: 0;
 }
 
 /* End of Primary Settings */
@@ -48,12 +52,12 @@ i.bx-menu{
 
 /*  Side Navigation Bar  */
 nav{
-    height: calc(100vh - 6.5rem);
+    height: calc(100vh - 5.8rem);
     width: 40px;
     background: var(--customColor);
     overflow: auto;
     position: absolute;
-    top: 7.8rem;
+    top: 5.8rem;
     left: 0;
 }
 
@@ -92,6 +96,7 @@ nav ul li h3{
     margin: auto;
     margin-left: 1.5rem;
     animation: all 250ms ease-in-out;
+    font-size: 16px;
 }
 
 nav ul li i:hover{

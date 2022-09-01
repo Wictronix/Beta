@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root {
     --blueColor-1: #7462e1;
@@ -69,14 +70,6 @@
   max-width: 450px;
   width: 100%;
   height: auto;
-}
-#header{
-  padding: 30px 50px;
-  max-width: 564px;
-  position: relative;
-  top: 10%;
-  left: 30vw;
-  font-size: 18px;
 }
 #content{
  position: absolute;
