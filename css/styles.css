@@ -82,6 +82,7 @@ img {
 }
 
 #loader {
+  display: none;
   position: absolute;
   background: #ffffff; 
   opacity: 0;
@@ -122,6 +123,15 @@ canvas {
   right: 20rem;
   height: 30%;
   width: 30%;
+}
+
+@media only screen and (max-width: 576px) {
+  canvas {
+    top: 13rem;
+    right: 0;
+    height: 25%;
+    width: 25%;
+  }
 }
 
 #gui {
@@ -215,9 +225,6 @@ canvas {
 
 
 @media (max-width: 768px) {
-  .header {
-    min-height: 80vh;
-  }
 
   .nav-list {
     flex-direction: column;
@@ -292,29 +299,19 @@ canvas {
 
 .wizard-img {
   position: absolute;
-  right: 0%;
-  bottom: 0%;
-  height: 70%;
-  width: 35%;
+  right: 1%;
+  top: -1%;
+  height: 110%;
+  width: 38%;
   z-index: -1;
-}
-
-@media (max-width: 996px) {
-  .overlay {
-    width: 70rem;
-    height: 60rem;
-    right: 0%;
-    bottom: -40%;
-  }
-
-  .wizard-img {
-    height: 45%;
-  }
 }
 
 @media (max-width: 768px) {
   h2 {
-    font-size: 3.4rem;
+    font-size: 3.9rem;
+  }
+  .wizard-img {
+    height: 100%;
   }
 }
 
@@ -323,14 +320,11 @@ canvas {
     min-height: 100vh;
   }
 
-  .overlay {
-    width: 40rem;
-    height: 40rem;
-    right: 0;
-  }
-
   .wizard-img {
-    width: 25rem;
+    width: 30rem;
+    top: 35%;
+    height: 80%;
+    right: -16%;
   }
 }
 
@@ -544,6 +538,7 @@ canvas {
 
   .header .content .btn {
     padding: 0.8rem 3rem;
+    margin-top: 1rem;
   }
 
   .socials span:hover i {
@@ -647,10 +642,12 @@ canvas {
   .col-1 {
     margin-bottom: 1rem;
     height: 32rem;
+    text-align: center;
   }
 
   .col-1 img {
     padding: 0.2rem 2rem;
+    margin: 0;
   }
 
 }
@@ -668,19 +665,57 @@ canvas {
   gap: 2rem;
 }
 
-.services .row .card {
-  padding: 1.2rem 1rem;
+.services .row .card-container{
+  position: relative;
+  height: 25rem;
+}
+
+.services .row .card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
   border-radius: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transition: var(--transition-2);
-  transform-style: preserve-3d;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
   border: 1.5px solid black;
-  height: 25rem;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+/* .services .row .card.flip{
+  transform: rotateY(180deg);
+  background: var(--customColor);
+} */
+.services .row .card:hover{
+  transform: rotateY(180deg);
+  background: var(--customColor);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.services .row .card-front{
+  position: absolute;
+  top: 4rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.services .row .card-back{
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+  padding-right: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
 
 body.dark .services .row .card {
@@ -716,39 +751,6 @@ body.dark .services .row p {
   color: black;
 }
 
-.services .row .card:hover {
-  background: var(--customColor);
-}
-.services .row .card:hover .card-front{
-  display: none;
-}
-.services .row .card:hover .card-back{
-  display: block;
-}
-.card-face{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.card .card-back {
-  display: none;
-}
-
-body.dark .services .row .card:hover .icon {
-  color: white;
-}
-
-.services .row .card:hover .icon,
-.services .row .card:hover h3,
-.services .row .card:hover span {
-  transition: var(--transition-2);
-  color: white;
-}
-
-.services .row .card:hover .icon {
-  transition: var(--transition-1);
-}
-
 /* Porfolio */
 
 .portfolio .projects {
@@ -762,7 +764,6 @@ body.dark .services .row .card:hover .icon {
 }
 
 .portfolio-container {
-  height: 20rem;
   overflow: hidden;
   border: 0.2rem solid #000;
 }
@@ -779,16 +780,17 @@ body.dark .services .row .card:hover .icon {
   background: var(--customColor);
   height: 3rem;
   width: 100%;
-  margin-top: -3rem;
+  padding-bottom: 4rem;
+  margin-top: -2rem;
 }
 
 .portfolio-container .p-text h3 {
   height: fit-content;
   width: fit-content;
-  margin: auto;
+  margin: 1rem auto;
   font-size: 1.6rem;
   font-weight: 200;
-  line-height: 3rem;
+  line-height: 5rem;
 }
 
 .portfolio .projects .pro-div img {
@@ -817,9 +819,10 @@ body.dark .services .row .card:hover .icon {
   justify-content: center;
   position: absolute;
   left: 50%;
-  width: 80%;
+  width: 100%;
   height: 80%;
   transform: translate(-50% , -100%);
+  overflow: hidden;
   visibility: hidden;
   opacity: 0;
   transition: var(--transition-2);

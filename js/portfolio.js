@@ -93,3 +93,23 @@ ul.addEventListener('click', (event)=>{
         sample_count = 0;
     }
 })
+
+// Service-details
+
+const sample = document.querySelectorAll('.sample-box');
+const details = document.querySelectorAll('.service-details');
+const btndetails = document.querySelectorAll('.btn-details');
+
+var i = btndetails.findIndex(function(){
+    for(x=0; x<sample.length-1; x++){
+        if (x==btndetails[x].onclick){
+            return x;
+        }
+    }
+    return x;
+})
+
+btndetails[i].addEventListener('click' , () => {
+    sample[i].classList.toggle('details');
+    details[i].classList.toggle('details');
+});

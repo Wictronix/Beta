@@ -171,8 +171,8 @@ nav ul > li:hover span, .max-nav ul > li:hover span{
     text-align: center;
 }
 .sample-box{
-    height: 22rem;
-    width: 36rem;
+    height: 20rem;
+    width: 25rem;
     position: relative;
     border: 0.2rem solid #000;
     overflow: hidden;
@@ -259,17 +259,6 @@ nav ul > li:hover span, .max-nav ul > li:hover span{
     text-shadow: none;
 }
 
-.empty{
-    height: fit-content;
-    width: fit-content;
-    display: none;
-    margin: auto;
-}
-.empty h3{
-    font-size: 2rem;
-    color: #f00;
-    padding: 1rem;
-}
 /*  End of Portfolio Content  */
 
 @media screen and (max-width: 400px){
@@ -302,13 +291,17 @@ nav ul > li:hover span, .max-nav ul > li:hover span{
 .service-box:hover .service-title h3{
     text-shadow: 0 0 5px #000;
 }
-.service-box:hover .service-description {
-    background: #fff;
-    border-radius: 0.5rem;
+.service-box button{
+    background: var(--customColor);
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 2rem;
+    align-self: center;
 }
-.service-box:hover .service-description p{
+.service-box:hover button{
+    background: white;
     color: var(--customColor);
-    text-shadow: none;
 }
 .service-title{
     min-height: 17rem;
@@ -332,19 +325,21 @@ nav ul > li:hover span, .max-nav ul > li:hover span{
     color: var(--customColor);
 }
 
-.service-description{
-    height: fit-content;
-    width: fit-content;
-    text-align: left;
-    padding: 1rem;
-    background: var(--customColor);
+.service-box .service-details {
+    display: none;
 }
-.service-description p{
-    color: #fff;
-    font-weight: 500;
-    transition: all 250ms ease-in-out;
-    word-spacing: 0.7rem;
-    text-shadow: 0 0 2px #000;
-    font-size: 1.8rem
+
+.sample-box.details {
+    display: flex;
+    flex-direction: column;
+    width: auto;
 }
+
+.service-box .service-details.details {
+    display: block;
+    margin: 2rem;
+    padding: 2rem;
+    background: grey;
+}
+
 /* End of Services Content */

@@ -1,6 +1,13 @@
 // loader
 const preloader = document.querySelector('#loader');
 
+// Flip cards
+
+const flipcard = document.querySelector('.card');
+flipcard.addEventListener('click' , () => {
+  flipcard.classList.toggle('flip');
+});
+
 // Our Book
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
