@@ -1,156 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team Members</title>
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
-    <link rel="stylesheet" href="./css/teammem.css">
-</head>
-<body>
-    
-    <div class = "container" id="overlay">
-      <div class="modal">
-        <div class="team">
-            <div class="member">  
-                <div class="image">
-                    <img src="./images/Mihir.jpeg" alt="">
-                    <button  class = "btn-edit"onclick="openDetails_1()"> &#8801; Read More</button>
-                </div>
-                <div class="heading"><h1>Mihir Gandhi</h1></div>
-                <div class="para"><h2>Ceo</h2></div>
-            </div>
-        </div>
-        <div class="team">
-            <div class="member">
-                <div class="image">
-                    <img src="./images/Sunil.jpeg" alt="">
-                    <button  class = "btn-edit"onclick="openDetails_2()"> &#8801; Read More</button>
-                </div>
-                <div class="heading"><h1>Sunil</h1></div>
-                <div class="para"><h2>Ceo</h2></div>
-            </div>
-        </div>
-        <div class="team">
-            <div class="member">
-                <div class="image">
-                    <img src="./images/Rishabh.jpeg" alt="">
-                    <button  class = "btn-edit"onclick="openDetails_3()"> &#8801; Read More</button>
-                </div>
-                <div class="heading"><h1>Rishabh</h1></div>
-                <div class="para"><h2>Ceo</h2></div>
-            </div>
-        </div>
-    </div>
 
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="The Wizards - A Digital Company|Your Problems - Our Magical Solutions.">
+  <meta name="description"
+    content="We provide services in Web Development,SEO,Graphic Designing,Content Writing,Business Planning,Logo Designing, and Video/Photo Editing.">
+  <meta name="keywords"
+    content="wizards,thewizards,build a website, make a website,simple website, build a website for free,freelancers near me,thewizards,wizard,wizards,The Wizard, wizards freelancer,wizards company,software company,digital company thewizards
+     Web developers near me, Web Development, Content Writing, Graphic Designers, Photo Editing, Business Planning, SEO, WordPress Management, Cloud Management, Logo Designing">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Mihir Gandhi">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MK9VFWT');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css" />
+  <!--PageClip-->
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/teammem.css" />
+  <title>Team - Wictronix</title>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK9VFWT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="navigation">
+      <div class="nav-center d-flex">
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link scroll-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link scroll-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./services.html" class="nav-link scroll-link">Services</a>
+          </li>
+        </ul>
+
+        <a href="#">
+          <h2 class="logo d-flex">
+            <img class="logo-img" src="./images/Logo.jpg"><span class="name">Wictronix</span>
+          </h2>
+        </a>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="./portfolio.html" class="nav-link scroll-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./blog.html" class="nav-link scroll-link">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link scroll-link">Contact</a>
+          </li>
+
+          <!-- Theme -->
+          <li class="nav-item theme-icon">
+            <i class="bx bx-moon"></i>
+          </li>
+
+          <!-- Close Button -->
+          <div class="close">
+            <i class="bx bx-x"></i>
+          </div>
+        </ul>
+
+        <!-- theme -->
+        <div class="theme theme-icon">
+          <i class="bx bx-moon"></i>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </div>
+    <div class="team-container" id="overlay">
+      <div class="modal">
+          <div class="member">
+            <div class="image">
+              <img src="./images/Mihir.jpeg" alt="">
+              <button class="btn-edit" onclick="openDetails_1()"> &#8801; Read More</button>
+            </div>
+            <div class="heading">
+              <h1>Mihir Gandhi</h1>
+            </div>
+            <div class="para">
+              <h2>Ceo</h2>
+            </div>
+          </div>
+          <div class="member">
+            <div class="image">
+              <img src="./images/Sunil.jpeg" alt="">
+              <button class="btn-edit" onclick="openDetails_2()"> &#8801; Read More</button>
+            </div>
+            <div class="heading">
+              <h1>Sunil</h1>
+            </div>
+            <div class="para">
+              <h2>Ceo</h2>
+            </div>
+          </div>
+          <div class="member">
+            <div class="image">
+              <img src="./images/Rishabh.jpeg" alt="">
+              <button class="btn-edit" onclick="openDetails_3()"> &#8801; Read More</button>
+            </div>
+            <div class="heading">
+              <h1>Rishabh</h1>
+            </div>
+            <div class="para">
+              <h2>Ceo</h2>
+            </div>
+          </div>
+      </div>
+
+
       <div class="container1">
 
         <div class="heading">
-            <div class="line1"></div>
-            <h1>Our Core Team</h1>
-            
-            <!-- <div class="line1"></div> -->
+          <div class="line1"></div>
+          <h1>Our Core Team</h1>
+
+          <!-- <div class="line1"></div> -->
         </div>
         <div class="team1">
-           
-            <div class="member">
-                <img src="./images/Armaan.jpeg" >
-                <h1>Armaan</h1><p>Member</p>
-            </div>
-            <div class="member">
-                <img src="./images/Archit.jpeg" >
-                <h1>Archit</h1><p>Member</p>
-            </div>
-            <div class="member">
-                <img src="./images/Dhanish.jpeg" >
-                <h1>Dhanish</h1><p>Member</p>
-            </div>
-            <div class="member ">
-                <img src="./images/Dharmjeet.jpeg" >
-                <h1>Dharmjeet
-                </h1><p>Member</p>
-            </div>
 
-            <div class="member">
-                <img src="./images/Gajendra.jpeg" >
-                <h1>Gajendra</h1><p>Member</p>
-            </div>
-            <div class="member">
-                <img src="./images/Karnik.jpeg" >
-                <h1>Karnik</h1><p>Member</p>
-            </div>
-            <div class="member">
-                <img src="./images/Nisarg.jpeg" >
-                <h1>Nisarg</h1><p>Member</p>
-            </div>
-            <div class="member">
-                <img src="./images/Ronit.jpeg" >
-                <h1>Ronit</h1><p>Member</p>
-            </div>
-            <div class="member">
-                <img src="./images/Sahaj.jpeg" >
-                <h1>Sahaj</h1><p>Member</p>
-            </div>
-            <div class="member">
-                <img src="./images/Shreyash.jpeg" >
-                <h1>Shreyash</h1><p>Member</p>
-            </div>
-            <div class="member">
-                <img src="./images/Karnik.jpeg" >
-                <h1>Karnik</h1><p>Member</p>
-            </div>
-            <div class="member">
-                <img src="./images/Sahaj.jpeg" >
-                <h1>Sahaj</h1><p>Member</p>
-            </div>
+          <div class="member">
+            <img src="./images/Armaan.jpeg">
+            <h1>Armaan</h1>
+            <p>Member</p>
+          </div>
+          <div class="member">
+            <img src="./images/Archit.jpeg">
+            <h1>Archit</h1>
+            <p>Member</p>
+          </div>
+          <div class="member">
+            <img src="./images/Dhanish.jpeg">
+            <h1>Dhanish</h1>
+            <p>Member</p>
+          </div>
+          <div class="member ">
+            <img src="./images/Dharmjeet.jpeg">
+            <h1>Dharmjeet
+            </h1>
+            <p>Member</p>
+          </div>
+
+          <div class="member">
+            <img src="./images/Gajendra.jpeg">
+            <h1>Gajendra</h1>
+            <p>Member</p>
+          </div>
+          <div class="member">
+            <img src="./images/Karnik.jpeg">
+            <h1>Karnik</h1>
+            <p>Member</p>
+          </div>
+          <div class="member">
+            <img src="./images/Nisarg.jpeg">
+            <h1>Nisarg</h1>
+            <p>Member</p>
+          </div>
+          <div class="member">
+            <img src="./images/Ronit.jpeg">
+            <h1>Ronit</h1>
+            <p>Member</p>
+          </div>
+          <div class="member">
+            <img src="./images/Sahaj.jpeg">
+            <h1>Sahaj</h1>
+            <p>Member</p>
+          </div>
+          <div class="member">
+            <img src="./images/Shreyash.jpeg">
+            <h1>Shreyash</h1>
+            <p>Member</p>
+          </div>
+          <div class="member">
+            <img src="./images/Karnik.jpeg">
+            <h1>Karnik</h1>
+            <p>Member</p>
+          </div>
+          <div class="member">
+            <img src="./images/Sahaj.jpeg">
+            <h1>Sahaj</h1>
+            <p>Member</p>
+          </div>
         </div>
-       
+
+      </div>
     </div>
-</div>
-<div class="modal-1" id ="modal-1">
-    <div class="setter">
-      <img src="./images/Mihir.jpeg" alt="">
-      <div class="close-btn"  onclick="closeDetails_1()">&times;</div>
-    </div>
+    <div class="modal-1" id="modal-1">
+      <div class="setter">
+        <img src="./images/Mihir.jpeg" alt="">
+        <div class="close-btn" onclick="closeDetails_1()">&times;</div>
+      </div>
       <div class="modal-header">
-        <h1>Mihir Gandhi</h1>  
-          <p>CEO</p>
+        <h1>Mihir Gandhi</h1>
+        <p>CEO</p>
       </div>
       <div class="modal-content">
-          <p>
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus optio sunt, tempore laborum laudantium tenetur quibusdam est eaque, sapiente voluptates voluptatem in quidem aliquam voluptatum accusamus! Facere consequatur molestias natus.</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus optio sunt, tempore laborum laudantium
+          tenetur quibusdam est eaque, sapiente voluptates voluptatem in quidem aliquam voluptatum accusamus! Facere
+          consequatur molestias natus.</p>
       </div>
-  </div>
-  <div class="modal-1" id ="modal-2">
+    </div>
+    <div class="modal-1" id="modal-2">
       <div class="setter">
-          <img src="./images/Sunil.jpeg" alt="">
-          <div class="close-btn"  onclick="closeDetails_2()">&times;</div>
-        </div>
-          <div class="modal-header">
-            <h1>Sunil</h1>  
-              <p>CEO</p>
-          </div>
-          <div class="modal-content">
-              <p>
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus optio sunt, tempore laborum laudantium tenetur quibusdam est eaque, sapiente voluptates voluptatem in quidem aliquam voluptatum accusamus! Facere consequatur molestias natus.</p>
-          </div>
-  </div>
-  <div class="modal-1" id ="modal-3">
+        <img src="./images/Sunil.jpeg" alt="">
+        <div class="close-btn" onclick="closeDetails_2()">&times;</div>
+      </div>
+      <div class="modal-header">
+        <h1>Sunil</h1>
+        <p>CEO</p>
+      </div>
+      <div class="modal-content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus optio sunt, tempore laborum laudantium
+          tenetur quibusdam est eaque, sapiente voluptates voluptatem in quidem aliquam voluptatum accusamus! Facere
+          consequatur molestias natus.</p>
+      </div>
+    </div>
+    <div class="modal-1" id="modal-3">
       <div class="setter">
-          <img src="./images/Rishabh.jpeg" alt="">
-          <div class="close-btn"  onclick="closeDetails_3()">&times;</div>
-        </div>
-          <div class="modal-header">
-            <h1>Rishabh</h1>  
-              <p>CEO</p>
-          </div>
-          <div class="modal-content">
-              <p>
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus optio sunt, tempore laborum laudantium tenetur quibusdam est eaque, sapiente voluptates voluptatem in quidem aliquam voluptatum accusamus! Facere consequatur molestias natus.</p>
-          </div>
-  </div>
-      <script src="./js/teammem.js"></script>
+        <img src="./images/Rishabh.jpeg" alt="">
+        <div class="close-btn" onclick="closeDetails_3()">&times;</div>
+      </div>
+      <div class="modal-header">
+        <h1>Rishabh</h1>
+        <p>CEO</p>
+      </div>
+      <div class="modal-content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus optio sunt, tempore laborum laudantium
+          tenetur quibusdam est eaque, sapiente voluptates voluptatem in quidem aliquam voluptatum accusamus! Facere
+          consequatur molestias natus.</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright &copy; 2022-The Wizards. All Rights reserved.|| Magically Created by
+        <a href=" https://www.thewizards.me" target="_blank">
+          <img class="logo-bottom" src="./images/Logo.jpg">&nbsp;The&nbsp;Wizards
+        </a>
+      </p>
+      <div>
+        <a href="./privacypolicy.html">Privacy Policy</a>
+        <a href="./termsofuse.html"> Term of Use</a>
+        <a href="./disclaimer.html">Disclaimer</a>
+        <a href="./sitemap.xml">Site Map</a>
+      </div>
+    </footer>
+
+    <!-- Swiper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Typeit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+  <!--PageClip-->
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/teammem.js"></script>
 </body>
+
 </html>

@@ -96,20 +96,20 @@ ul.addEventListener('click', (event)=>{
 
 // Service-details
 
-const sample = document.querySelectorAll('.sample-box');
-const details = document.querySelectorAll('.service-details');
-const btndetails = document.querySelectorAll('.btn-details');
+const sample = document.querySelector('.sample-box');
+const details = document.querySelector('.service-details');
+const btndetails = document.querySelector('.btn-details');
 
-var i = btndetails.findIndex(function(){
-    for(x=0; x<sample.length-1; x++){
-        if (x==btndetails[x].onclick){
-            return x;
-        }
-    }
-    return x;
-})
+// var i = btndetails.findIndex(function(){
+//     for(x=0; x<sample.length-1; x++){
+//         if (x==btndetails[x].onclick){
+//             return x;
+//         }
+//     }
+//     return x;
+// })
 
-btndetails[i].addEventListener('click' , () => {
-    sample[i].classList.toggle('details');
-    details[i].classList.toggle('details');
+btndetails.addEventListener('click' , () => {
+    sample.classList.toggle('details');
+    details.classList.toggle('details');
 });

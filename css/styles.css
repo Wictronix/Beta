@@ -81,40 +81,6 @@ img {
   align-items: center;
 }
 
-#loader {
-  display: none;
-  position: absolute;
-  background: #ffffff; 
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
-  -o-transition: opacity .3s ease-out, visibility 0s linear .3s;
-  transition: opacity .3s ease-out, visibility 0s linear .3s;
-  z-index: -2; 
-}
-
-#loader.show {
-  -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
-  -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
-  transition: opacity .6s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-  position: absolute;
-  top: 40%;
-  left: 40%;
-}
-
-#loader .loader {
-  position: relative;
-  width: 20rem;
-  height: 20rem;
-  border: 5px solid var(--greenColor);
-  border-top: 5px solid var(--yellow);
-  border-radius: 50%;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
 /* Spiral CSS */
 canvas {  
   display: block;
@@ -653,7 +619,7 @@ canvas {
 }
 
 @media (max-width: 567px) {
-  .btn-outline {
+  .btn.outline {
     margin: 1rem 0 0 0;
   }
 }
@@ -695,7 +661,7 @@ canvas {
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
 .services .row .card-front{
   position: absolute;
-  top: 4rem;
+  top: 2rem;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -730,6 +696,22 @@ body.dark .services .row .card {
 .services .row span {
   font-size: 2rem;
   color: var(--grey);
+}
+
+.services .row a button {
+  font-size: 2rem;
+  padding: .8rem 2rem;
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid var(--black);
+  color: var(--black);
+  margin-top: 1rem;
+}
+
+.services .row a button:hover {
+  background: var(--customColor);
+  color: var(--white);
+  border: 2px solid var(--white);
 }
 
 .services .row h3 {
@@ -826,6 +808,9 @@ body.dark .services .row p {
   visibility: hidden;
   opacity: 0;
   transition: var(--transition-2);
+}
+.portfolio #popup img {
+  height: 25rem;
 }
 
 #portfolio .blur.book-active {

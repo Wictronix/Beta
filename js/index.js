@@ -1,6 +1,3 @@
-// loader
-const preloader = document.querySelector('#loader');
-
 // Flip cards
 
 const flipcard = document.querySelector('.card');
